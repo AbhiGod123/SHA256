@@ -170,7 +170,7 @@ public class SHA256 {
 		for(int i=0;i<8;++i){
 		    String hex = Integer.toHexString(H[i]);
 		    System.out.print(hex + ", ");
-		}
+		}//prints in hex values
 		
 		return toByteArray(H);
 	}
