@@ -166,11 +166,13 @@ public class SHA256 {
 			H[7] = H[7] + h;
 		}
 		
+		{
 		System.out.println("To Hex");
 		for(int i=0;i<8;++i){
 		    String hex = Integer.toHexString(H[i]);
 		    System.out.print(hex + ", ");
-		}//prints in hex values
+		}//prints in hex values	
+		}//remove this block after debugging
 		
 		return toByteArray(H);
 	}
